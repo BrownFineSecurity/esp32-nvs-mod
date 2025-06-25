@@ -9,7 +9,7 @@ First we need to extract all the data contained in the NVS partition to a JSON f
 python nvs_read.py nvs.bin data.json
 ```
 
-## Step 2 - Convert to CVS format: generate\_nvs\_csv.py
+## Step 2 - Convert to CSV format: generate\_nvs\_csv.py
 
 Second we need to convert this JSON format to the [nvs\_partition\_gen.py CSV format](https://github.com/espressif/esp-idf/tree/master/components/nvs_flash/nvs_partition_generator)
 
@@ -19,7 +19,7 @@ python generate_nvs_csv.py data.json data.csv
 
 ## Step 3 - Modify key/value data
 
-Edit the CSV file OR the blob data pointed to by a CVS entry
+Edit the CSV file OR the blob data pointed to by a CSV entry
 
 ## Step 4 - Build new NVS partition
 
